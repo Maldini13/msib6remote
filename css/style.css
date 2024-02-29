@@ -1,0 +1,62 @@
+p {
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+  body {
+    background-image: url("../img/backgroun.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  fieldset,legend{
+      border-width: 1px;
+      border-color: rgb(210, 15, 15);
+      border-radius: 30px;
+      font-weight: bold;
+  }
+  legend{
+      padding: 10px;
+      text-align: left;
+      background-color: rgb(85, 186, 211);
+      color: rgb(30, 14, 206);
+      font-weight: bold;
+  }
+  table {
+    padding: 10px;
+    margin: auto;
+  }
+  tr{
+    padding: 5px;
+    border: 1px solid seagreen
+  }
+  tr:hover {
+    background-color: rgb(131, 131, 141);
+    color: rgb(255, 0, 0);
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+  }
+  #paragraf{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: rgb(102, 212, 212);
+  }
+  ul, li, a.item:link, a.item:visited, a.item:active{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    float: left;
+    padding: 2px 3px;
+
+  }
+
+#andre {
+    background-color: aqua;
+    font-size: 50px;
+    font-weight: bold;
+}

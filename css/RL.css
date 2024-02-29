@@ -1,0 +1,18 @@
+fieldset,legend{
+    border-width: 1px;
+    border-color: rgb(210, 15, 15);
+    border-radius: 30px;
+    font-weight: bold;
+}
+legend{
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(85, 186, 211);
+    color: rgb(30, 14, 206);
+    font-weight: bold;
+}
+#andre {
+    background-color: aqua;
+    font-size: 100px;
+    font-weight: bold;
+}
