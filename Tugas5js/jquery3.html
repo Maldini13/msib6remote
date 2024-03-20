@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+  <body>
+    <h2>Letakan Kursor ke masing-masing kotak untuk melihat gambar</h2>
+    <div id="div1">This is a Cat</div>
+    <div id="div2">This is a Bebek</div>
+    <div id="div3">This is a Chicken</div>
+
+    <audio id="catSound" src="sound/cat_sound.mp3"></audio>
+    <audio id="bebekSound" src="sound/bebek_sound.mp3"></audio>
+    <audio id="ayamSound" src="sound/ayam_sound.mp3"></audio>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      //tugas hari ini
+      //ketika mousenya diatas gambar atau kotak maka hewannya bisa bersuara
+      $('document').ready(function () {
+        $('#div1').mouseover(function () {
+          $(this).css({
+            'background-image': 'url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Calico_cat_-_Phoebe.jpg)',
+            'background-size': 'contain',
+            'background-repeat': 'no-repeat',
+            'background-position': 'center',
+          });
+          $('#catSound')[0].play();
+        }).mouseout(function () {
+          $(this).css({
+            background: 'green',
+          });
+          $('#catSound')[0].pause();
+          $('#catSound')[0].currentTime = 0;
+        });
+
+        $('#div2').mouseover(function () {
+          $(this).css({
+            'background-image': 'url(https://cdn.linkumkm.id/library/1/0/8/1/7/8/108178_840x576.jpg)',
+            'background-size': 'contain',
+            'background-repeat': 'no-repeat',
+            'background-position': 'center',
+          });
+          $('#bebekSound')[0].play();
+        }).mouseout(function () {
+          $(this).css({
+            background: 'green',
+          });
+          $('#bebekSound')[0].pause();
+          $('#bebekSound')[0].currentTime = 0;
+        });
+
+        $('#div3').mouseover(function () {
+          $(this).css({
+            'background-image': 'url(https://satujam.com/fauna/wp-content/uploads/2015/11/warna-bulu-ayam-bangkok-super-berpetuah-dan-menangan.jpg)',
+            'background-size': 'contain',
+            'background-repeat': 'no-repeat',
+            'background-position': 'center',
+          });
+          $('#ayamSound')[0].play();
+        }).mouseout(function () {
+          $(this).css({
+            background: 'green',
+          });
+          $('#ayamSound')[0].pause();
+          $('#ayamtSound')[0].currentTime = 0;
+        });
+      });
+    </script>
+  </body>
+</html>
